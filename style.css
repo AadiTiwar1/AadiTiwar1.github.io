@@ -41,3 +41,13 @@ body {
   font: 16px 'Times New Roman', serif;
   color: lightgray;
 }
+/*https://demo.tutorialzine.com/2010/03/centering-div-vertically-and-horizontally/demo.html*/
+div[id="AadiTiwari"]{
+    font: 30px 'Times New Roman', serif;
+    width:270px;
+	height:150px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-40px 0 0 -60px;
+}
