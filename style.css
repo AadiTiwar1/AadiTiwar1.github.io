@@ -8,7 +8,7 @@ https://www.youtube.com/shorts/aBCmOjaGGkI
 }
 
 nav[id="right nav"] {
-    background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
+    background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black */
     color: white;
     padding: 1rem;
     text-align: right;
@@ -35,9 +35,9 @@ nav ul li a {
 
 
 body {
-  background-image: url('snow.gif');
+  background-image: url('30000fps.gif');
   background-size: cover;     
-  
+  background-attachment: fixed; /** on the DP page the gif will stretch a bunch because the gif is expanding to have the same height as the height of the conent on the page, alot, so you need to fix it so that its just the same gif that you scroll text over **/
   font: 16px 'Times New Roman', serif;
   color: lightgray;
 }
