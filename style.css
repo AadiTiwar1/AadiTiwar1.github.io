@@ -28,6 +28,7 @@ nav[id="right-nav"] {
     height: 100vh;
     position: fixed;
     right: 0;
+    box-sizing: border-box; /* account for the 1rem padding when sizing width */
 }
 
 nav ul {
@@ -60,7 +61,7 @@ body {
   background-image: url('gifs/redwave.gif');
   background-size: 100vmin 100vmin;
   background-position: center;
-  background-repeat: no-repeat;     
+  background-repeat: repeat-x;     
   background-attachment: fixed; /** on the DP page the gif will stretch a bunch because the gif is expanding to have the same height as the height of the conent on the page, alot, so you need to fix it so that its just the same gif that you scroll text over **/
   font: 16px 'Times New Roman', serif;
   color: lightgray;
