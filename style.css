@@ -8,11 +8,26 @@ https://www.youtube.com/shorts/aBCmOjaGGkI
     padding: 0;
 }
 
-nav[id="right nav"] {
-    background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black */
+nav[id="left-nav"] {
+    background-color: rgba(0, 0, 0, 0.7); /* 50% transparent black */
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    width: calc( ( 100vw - 100vmin ) / 2);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    box-sizing: border-box; /* account for the 1rem padding when sizing width */
+}
+nav[id="right-nav"] {
+    background-color: rgba(0, 0, 0, 0.7); /* 50% transparent black */
     color: white;
     padding: 1rem;
     text-align: right;
+    width: calc( ( 100vw - 100vmin ) / 2);;
+    height: 100vh;
+    position: fixed;
+    right: 0;
 }
 
 nav ul {
@@ -20,11 +35,16 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-around; 
+    width: 20vw;
+    height: 100vh;
 }
 
 nav ul li {
-    display: inline;
+    float: left;
+    width: 100%;
 }
 
 nav ul li a {
@@ -32,12 +52,15 @@ nav ul li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
+    box-sizing: border-box; /* account for the 1rem padding when sizing width */
 }
 
 
 body {
   background-image: url('gifs/redwave.gif');
-  background-size: cover;     
+  background-size: 100vmin 100vmin;
+  background-position: center;
+  background-repeat: no-repeat;     
   background-attachment: fixed; /** on the DP page the gif will stretch a bunch because the gif is expanding to have the same height as the height of the conent on the page, alot, so you need to fix it so that its just the same gif that you scroll text over **/
   font: 16px 'Times New Roman', serif;
   color: lightgray;
