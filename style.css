@@ -34,18 +34,20 @@ nav ul li a {
     display: block;
 }
 
-
+h1 {
+  font-family: "Garamond";
+}
 body {
   background-image: url('gifs/redwave.gif');
   background-position: center;
   background-size: cover;
   background-attachment: fixed; /** on the DP page the gif will stretch a bunch because the gif is expanding to have the same height as the height of the conent on the page, alot, so you need to fix it so that its just the same gif that you scroll text over **/
-  font: 16px 'Times New Roman', serif;
+  font: 16px 'Times New Roman';
   color: lightgray;
 }
 /*https://demo.tutorialzine.com/2010/03/centering-div-vertically-and-horizontally/demo.html*/
 div[id="AadiTiwari"]{
-    font: 30px 'Aptos';
+    font: 30px 'Times New Roman';
     width:270px;
 	height:150px;
 	position:absolute;
