@@ -1,0 +1,31 @@
+.project-box {
+    display: flex;
+    border: 5px solid gray;
+    line-height: 1.6;
+    width: 70vw;
+    height: 20vh;
+    margin: 0 auto;
+}
+
+.description {
+    display: flex;
+    margin-left: 0.5vw;
+    
+}
+.thumbnail {
+    align-items: center;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    display: flex;
+    width: 24vh;
+    height: 18vh;
+
+}
+/**.project-thumb {
+    display: flex;
+    flex: 2;
+    width: 16vw;
+    height: 16vh;
+    object-fit: contain;
+    object-position: left;
+    }**/

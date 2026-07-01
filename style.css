@@ -33,7 +33,12 @@ nav ul li a {
     padding: 0.5rem 1rem;
     display: block;
 }
-
+.background-blur {
+    background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black */
+    max-width: 75vw;
+    min-height: 100vh;
+    margin: 0 auto;
+}
 h1 {
   font-family: "Garamond";
 }
