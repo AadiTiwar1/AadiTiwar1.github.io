@@ -16,18 +16,15 @@ nav {
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black */
     color: white;
-    padding: 1rem;
     text-align: right;
+    border-bottom: 1px solid white;
 }
 
-nav li {
+nav a {
     display: inline;
-}
-
-nav li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1.5rem 1rem;
     display: block;
 }
 .background-blur {
@@ -59,21 +56,20 @@ div[id="AadiTiwari"]{
 }
 
 .dropdown {
-    background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black */
-    color: white;
-    padding: 1rem;
-    text-align: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+    position: relative;
 }
 
 .dropdown-item {
+    border: 1px solid white;
     display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    padding: 0rem 1rem;
 }
 
-.dropdown:hover dropdown-item {
+.dropdown:hover .dropdown-item {
     display: block;
+    position: absolute;
 }
