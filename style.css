@@ -8,26 +8,23 @@ https://www.youtube.com/shorts/aBCmOjaGGkI
     padding: 0;
 }
 
-nav[id="right nav"] {
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black */
     color: white;
     padding: 1rem;
     text-align: right;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav ul li {
+nav li {
     display: inline;
 }
 
-nav ul li a {
+nav li a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -59,4 +56,24 @@ div[id="AadiTiwari"]{
 	left:50%;
 	top:50%;
 	margin:-40px 0 0 -60px;
+}
+
+.dropdown {
+    background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black */
+    color: white;
+    padding: 1rem;
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdown-item {
+    display: none;
+}
+
+.dropdown:hover dropdown-item {
+    display: block;
 }
