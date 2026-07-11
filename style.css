@@ -31,6 +31,7 @@ nav a {
     background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black */
     max-width: 75vw;
     min-height: 100vh;
+    height: auto;
     margin: 0 auto;
 }
 h1 {
@@ -80,4 +81,11 @@ div[id="AadiTiwari"]{
     margin: 2rem auto;
     padding: 0 1rem 3rem;
     margin: 0 auto;
+}
+
+.school-header {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 1vmin;
 }
