@@ -24,14 +24,19 @@
 }
 
 .title {
-    border: 1px solid #FFFFFF;
+    border: 0px solid #FFFFFF;
 }
 
 .paragraph {
-    border: 1px solid #FFFFFF;
+    border: 0px solid #FFFFFF;
     font-size: 11pt;
 }
 
 .tags {
-    border: 1px solid #FFFFFF;
+    border: 0px solid #FFFFFF;
+}
+
+.text-area a {
+    color: white;
+    text-decoration: none;
 }
