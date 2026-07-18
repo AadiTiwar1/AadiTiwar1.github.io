@@ -1,0 +1,45 @@
+.preview_album {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 2px solid #967859;
+    line-height: 1.6;
+    width: 50vw;
+    height: 20vh;
+    margin: 0 auto;
+}
+
+.thumbnail {
+    align-items: center;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    display: flex;
+    width: 18vh;
+    height: 18vh;
+
+}
+
+.text-area {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding-left: 1vh;
+}
+
+.title {
+    border: 0px solid #FFFFFF;
+    padding-top: 0.5vh;
+}
+
+.paragraph {
+    border: 0px solid #FFFFFF;
+    font-size: 11pt;
+}
+
+.tags {
+    border: 0px solid #FFFFFF;
+    padding-bottom: 1vh;
+}
+
+.text-area a {
+    color: white;
+    text-decoration: none;
+}
