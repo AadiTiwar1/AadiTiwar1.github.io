@@ -17,7 +17,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black */
     color: white;
     text-align: right;
-    border-bottom: 1px solid #967859;
+    border-bottom: 2px solid #967859;
 }
 
 nav a {
