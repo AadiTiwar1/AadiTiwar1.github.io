@@ -2,12 +2,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 6fr 3fr;
-    gap: 1vw;
-    padding: 1vw;
+    row-gap: 1vw;
+    column-gap: 2vw;
+    padding: 2vw;
     border: 2px solid #967859;
     line-height: 1.6;
-    width: 70vw;
-    height: 70vh;
+    width: 65vw;
+    height: 65vh;
     margin: 0 auto;
 }
 
@@ -50,4 +51,9 @@
 .text-area a {
     color: white;
     text-decoration: none;
+}
+
+.final-product a {
+    color: white;
+    text-decoration: underline;
 }

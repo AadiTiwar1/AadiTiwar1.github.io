@@ -25,16 +25,140 @@
       <div class="background-blur">
         <br>
         <div class="content-wrapper"><h1>Projects</h1>
-        <p>The images are links to the final technical pieces of work, with the accompanying text detailing how each project came to be in the first place.</p> </div>
+        <p>Selected projects I am particularly proud of, ranging from works in Quantum Computing, Machine Learning, and Finite Element Analysis.</p> </div>
 
 
         <div class="project-box">
           <a href="discovery_project.html" target="_blank"><img class="thumbnail" src="pngs/qca_uf_proposal_image.png"></a>
           
-          <div class="title">Modeling a 3 qubit Linear Optical Quantum Computer to identify and optimize sources of noise</div>
-          <div class="what-i-did"><p>I started working on this February 2026 when the Georgia Tech Quantum Computing Association began a new project in assembling a linear optical quantum computer on our own. Our goal is to make the most efficient system possible using the limited optical components we have access to given our budget, which means trying to figure out a way to identify potential sources of optical noise that might result from component configurations. Naturally, trying to model the entire setup in COMSOL is a worthwhile endeavor.</p></div>
-          <div class="skills-and-tools"><p>Explored Topics: Electromagnetic Waves Beam Envelopes method, Linear Optical Quantum Computing</p></div>
-          <div class="final-product"><p>Final Product: [Description of the final product or outcome]</p></div>
+          <div class="title"><h3>Modeling a 3 qubit Linear Optical Quantum Computer to identify and optimize sources of noise</h3></div>
+          <div class="what-i-did">
+            <p>Problem: Georgia Tech Quantum Computing Association began a new project in assembling a linear optical quantum computer on our own. Our goal is to make the most efficient system possible using the limited optical components we have access to given our budget, which means trying to figure out a way to identify potential sources of optical noise that might result from component configurations.</p>
+            <br>
+            <p>How I solved the problem:</p>
+            <ul style="padding-left: 1vw;">
+              <li>Spent a month getting ridiculously familiarized with the Polarizing Beam Splitter (application ID: 31041) from COMSOL model library</li>
+              <li>Self-studied the Electric Waves, Beam Envelopes method for COMSOL for wave optics</li>
+              <li>Used existing framework of manually calculating phase continuity expressions in order to extend beam propagation out of the PBS and into more domains to model larger setups involving multiple components</li>
+            </ul>
+          </div>
+          <div class="skills-and-tools">
+            <p>Relevant Skills, Concepts, Tools:</p>
+            <ul style="padding-left: 1vw;">
+              <li>Finite Element Analysis tool: COMSOL Multiphysics</li>
+              <li>Package: Electromagnetic Waves, Beam Envelopes</li>
+              <li>Concepts: Phase matching expressions, Antireflection coating transition boundaries</li>
+            </ul>
+          </div>
+          <div class="final-product">
+            <p>Final Products:</p>
+            <ul style="padding-left: 1vw;">
+              <li>Abstract accepted to COMSOL 2026 Boston Conference, paper on the way!</li>
+              <li><a href="https://docs.google.com/presentation/d/1QA1aPK5MPWxjbNPLCp_jWuYKiwQXOD100qX3FrDRq18/edit?usp=sharing" target="_blank">Georgia Tech Student Foundation Funding Proposal (accepted for $10,000)</a></li>
+              <li><a href="discovery_project.html" target="_blank">Detailed Write-up on the process of working on this project</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="project-box">
+          <a href="https://esrel2024.com/wp-content/uploads/articles/part9/quantum-generative-adversarial-networks-for-wind-turbine-shaft-vibration-prognostics.pdf" target="_blank"><img class="thumbnail" src="pngs/ucla_image.png"></a>
+          
+          <div class="title"><h3>First Author Quantum Machine Learning paper for Time Series Forecasting</h3></div>
+          <div class="what-i-did">
+            <p>Problem: Analyzing advantages/disadvantages of using Quantum Machine Learning in wind turbine degradation forecasting</p>
+            <br>
+            <p>How I solved the problem:</p>
+            <ul style="padding-left: 1vw;">
+              <li>Architected a model that uses a Quantum Long Short Term memory (QLSTM) as the Generator and classical Convolutional Neural Network as discriminator within a Generative Adversarial Network (GAN)</li>
+              <li>Implemented Quantum GAN to forecast turbine’s vibration signals, converging in 2.7x less epochs (49 classical epochs, 18 quantum) with only 169 QLSTM parameters VS 8,186,113 classical LSTM parameters</li>
+              <li>Deployed repository to a High Performance Computing cluster using SLURM to parameterize train/test split across 5 values and repeat each split 10 times to quantify variance in each model’s RMSE performance</li>
+            </ul>
+          </div>
+          <div class="skills-and-tools">
+            <p>Relevant Skills, Concepts, Tools:</p>
+            <ul style="padding-left: 1vw;">
+              <li>Programming Language: Python</li>
+              <li>Libraries: Pytorch, Pennylane, Pandas</li>
+              <li>HPC Integration: SLURM for UCSC's Hummingbird cluster</li>
+              <li>Lessons learned: How to write and publish research, Parameterized Quantum Circuits replacing ML layers, Bayesian Optimization for Hyperparameter tuning</li>
+            </ul>
+          </div>
+          <div class="final-product">
+            <p>Final Products:</p>
+            <ul style="padding-left: 1vw;">
+              <li><a href="https://esrel2024.com/wp-content/uploads/articles/part9/quantum-generative-adversarial-networks-for-wind-turbine-shaft-vibration-prognostics.pdf" target="_blank">Conference paper at ESREL'24</a></li>
+              <li><a href="https://onedrive.live.com/:w:/g/personal/a9f7fbfb493622da/IQCRL4-etilMSIAqbDXTZwFQASGwqyFzuKO-4QAn_B2rIzc?rtime=-D2BB-j03kg&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3cvYy9hOWY3ZmJmYjQ5MzYyMmRhL0lRQ1JMNC1ldGlsTVNJQXFiRFhUWndGUUFTR3dxeUZ6dUtPLTRRQW5fQjJySXpjP2U9NGJ6NHFI" target="_blank">Revised paper with HPC integration</a></li>
+              <li><a href="https://github.com/AadiTiwar1/Quantum-GAN-for-Time-Series-Forecasting" target="_blank">Github repo with 15 stars and 5 forks</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="project-box">
+          <a href="https://docs.google.com/presentation/d/1wTdqrbS_6lyCWNVb1af0ClKwYWOSt5c2jhiRPg8xhIY/edit?usp=sharing" target="_blank"><img class="thumbnail" src="pngs/comsol_image.png"></a>
+          
+          <div class="title"><h3>Third Author Electric Field distribution simulation and analysis using COMSOL</h3></div>
+          <div class="what-i-did">
+            <p>Problem: Electric Field distribution simulation and analysis using COMSOL</p>
+            <br>
+            <p>How I solved the problem:</p>
+            <ul style="padding-left: 1vw;">
+              <li>Spent a month going through a former PhD student in the lab's 200 page dissertation from 2014 to see how they previously modeled nanopores in comsolSpent a month going through a former PhD student in the lab's 200 page dissertation from 2014 to see how they previously modeled nanopores in comsol</li>
+              <li>Spent one more month converting his approach in COMSOL version 3.5 to COMSOL version 6.2</li>
+              <li>Automated parameter sweep to vary the amount of nanopores (1,2,4,8,10) and distance between nanopores (100 nanometers to 6 micrometers in 100 nm increments) to calculate capture radius for each configuration</li>
+              <li>Eliminated out of memory errors by creating custom mesh with varying element sizes depending on proximity to regions of interest and editing COMSOL’s internal files to increase access to RAM</li>
+              <li>Exported raw electric field distribution data from COMSOL to MATLAB to find an equation to express particle capture radius as a logistic function of nanopore count and placement</li>
+            </ul>
+          </div>
+          <div class="skills-and-tools">
+            <p>Relevant Skills, Concepts, Tools:</p>
+            <ul style="padding-left: 1vw;">
+              <li>Finite Element Analysis tool: COMSOL Multiphysics</li>
+              <li>Data analysis: MATLAB, Desmos logistic regression</li>
+              <li>Lessons learned: How to rigorously parse through outdated PhD disserations, AC/DC package for COMSOL, memory optimization</li>
+            </ul>
+          </div>
+          <div class="final-product">
+            <p>Final Products:</p>
+            <ul style="padding-left: 1vw;">
+              <li>Third Author publication on the way!</li>
+              <li><a href="https://docs.google.com/presentation/d/1wTdqrbS_6lyCWNVb1af0ClKwYWOSt5c2jhiRPg8xhIY/edit?usp=sharing" target="_blank">Lab group update presentations</a></li>
+            </ul>
+          </div>
+        </div>
+        <br>
+
+        <div class="project-box">
+          <a href="index.html" target="_blank"><img class="thumbnail" src="pngs/personal_site.png"></a>
+          
+          <div class="title"><h3>Personal Website</h3></div>
+          <div class="what-i-did">
+            <p>Problem: I believe I've worked on many cool projects over the years, have many cool interests, and want to put all of these things in one place. I had no place to do that, which led me to the idea of making a personal website.</p>
+            <br>
+            <p>How I solved the problem:</p>
+            <ul style="padding-left: 1vw;">
+              <li>Started off with a purely HTML website, consisting solely of <p> elements and href links as I slowly learned HTML/CSS from absolute 0 in order to reinforce fundamental understanding of how HTMl and CSS worked individually</li>
+              <li>Described the design element I'd want to add next (background gif, boxes containing text) in google and learned relevant CSS</li>
+              <li>Researched other personal websites from repositories containing hundreds of personal site examples, drawing inspiration from the things I liked and things I thought could've been done better</li>
+             </ul>
+          </div>
+          <div class="skills-and-tools">
+            <p>Relevant Skills, Concepts, Tools:</p>
+            <ul style="padding-left: 1vw;">
+              <li>Languages: HTML, CSS. No JS just yet</li>
+              <li>Deployment: (Whatever place I deploy with, probably buying a URL and keeping on github pages)</li>
+              <li>Lessons learned: How to learn programming languages (albeit simple ones) from complete scratch by just starting</li>
+            </ul>
+          </div>
+          <div class="final-product">
+            <p>Final Products:</p>
+            <ul style="padding-left: 1vw;">
+              <li>This website</li>
+            </ul>
+          </div>
         </div>
         <br>
 
