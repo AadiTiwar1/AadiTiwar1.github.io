@@ -89,6 +89,7 @@
 
 @media (max-width: 800px) {
   .preview_album { width: 95%; grid-template-columns: 1fr; min-height: 0; }
-  .thumbnail { width: 50%; min-height: auto; margin: 0.5rem auto; }
+  .preview_album > a { display: block; width: fit-content; margin: 0.5rem auto; }
+  .thumbnail { width: min(50vw, 200px); min-height: auto; margin: 0; }
   .text-area { padding: 0.5rem; }
 }
