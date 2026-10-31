@@ -92,3 +92,11 @@ div[id="AadiTiwari"]{
     align-items: end;
     gap: 1vmin;
 }
+
+@media (max-width: 800px) {
+  nav { flex-wrap: wrap; }
+  .background-blur, .content-wrapper, .project-box { max-width: 95%; width: 95%; }
+  .project-box { grid-template-columns: 1fr; grid-template-rows: auto; min-height: 0; }
+  .title, .what-i-did, .skills-and-tools, .final-product { grid-area: auto; }
+  div[id="AadiTiwari"] { position: static; margin: 30vh auto; text-align: center; }
+}

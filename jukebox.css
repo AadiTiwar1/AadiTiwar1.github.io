@@ -86,3 +86,9 @@
     from {translate: -100%;}
     to {translate: 0;}
 }
+
+@media (max-width: 800px) {
+  .preview_album { width: 95%; grid-template-columns: 1fr; min-height: 0; }
+  .thumbnail { width: 50%; min-height: auto; margin: 0.5rem auto; }
+  .text-area { padding: 0.5rem; }
+}
